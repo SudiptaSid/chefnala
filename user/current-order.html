@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>ChefNala</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../images/favicon.png">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<!-- Top Header -->
+		<section class="top-header">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-7 col-6">
+						<div class="left-section">
+							<span>Welcome to our store cskart</span>
+							<a href="#">
+								<i class="fa fa-phone"></i> Call Us: 123-456-7890
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-5 col-6">
+						<div class="right-section">
+							<a href="#" class="cs-wishlist"><i class="fa fa-heart"></i> <span>Wishlist</span></a>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-user"></i>
+									My Account
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Account Settings</a>
+									<a class="dropdown-item" href="#">Orders</a>
+									<a class="dropdown-item" href="#">Logout</a>
+								</div>
+							</div>
+							<a href="#" class="mobile-account"><i class="fa fa-user"></i></a>
+							<a href="#" class="btn btn-main account-login">Login</a>
+							<a href="#" class="mobile-cart">
+								<img src="../images/cart.svg" alt="">
+								<span>1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Header -->
+		<section id="main-header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="content">
+							<div class="logo-part">
+								<button id="sidebar1-toggle">
+									<img src="../images/menu.svg" alt="">
+								</button>
+								<a href="#" id="logo">
+									<img src="../images/logo.png" alt="">
+								</a>
+								<div id="zipcode">
+									<img src="../images/map-marker.svg" alt="">
+									<input type="text" value="94014" data-toggle="modal" data-target="#zipcode-modal">
+								</div>
+							</div>
+							<div id="search-box">
+								<form action="#">
+									<input type="text" class="form-control" placeholder="Search here...">
+									<img src="../images/search.svg" alt="">
+								</form>
+							</div>
+							<div class="desktop-link">
+								<a href="join-as-foodei.html">Join As Foodie</a>
+								<a href="join-creator-club.html">Join Creater Club</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<!-- Mobile Menu -->
+	<div id="sidebar1-menu">
+		<div class="avtr-sec">
+			<div class="img-sec">
+				<img src="../images/avatar/1.jpg" alt="">
+			</div>
+			<div class="details-sec">
+				<h5>Profile name</h5>
+				<a href="#">view account</a>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<a href="#.html">Join Creater Club</a>
+			</li>
+			<li>
+				<a href="#.html">Join Foodie Club</a>
+			</li>
+			<li>
+				<a href="#.html">Account</a>
+			</li>
+			<li>
+				<a href="#.html">Setting</a>
+			</li>
+			<li>
+				<a href="#.html">Help</a>
+			</li>
+			<li>
+				<a href="#.html">Promotions</a>
+			</li>
+		</ul>
+		<div class="btn_sec">
+			<div class="app-download">
+				<a href="#">
+					<img src="../images/App-Store.png" alt="">
+				</a>
+				<a href="#">
+					<img src="../images/Google-App.png" alt="">
+				</a>
+			</div>
+			<a href="sign-in.html" class="btn btn-main btn-block">Sign in</a>
+		</div>
+	</div>
+
+	<!-- Account Setting Advance -->
+	<section id="account-setting-advance">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-5">
+					<div class="grid-left">
+						<ul>
+							<li><a href="profile.html"><i class="fa fa-user"></i> Profile</a></li>
+							<li><a href="current-order.html" class="active"><i class="fa fa-shopping-cart"></i>Orders</a></li>
+							<li><a href="offer.html"><i class="fa fa-gift"></i> Your offers</a></li>
+							<li><a href="payment.html"><i class="fa fa-credit-card"></i> Payment methods</a></li>
+							<li><a href="delivery.html"><i class="fa fa-map-marker"></i> Delivery addresses</a></li>
+							<li><a href="#"><i class="fa fa-sign-out"></i> Log out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-7">
+					<div class="grid-right">
+						<div class="order-menu">
+							<ul>
+								<li><a href="current-order.html" class="active">Current order</a></li>
+								<li><a href="track-order.html">Track order</a></li>
+								<li><a href="past-order.html">Past order</a></li>
+								<li><a href="request-review.html">Request a review</a></li>
+							</ul>
+						</div>
+						<!-- Order Now -->
+						<div class="order-now-box">
+							<h5 class="h5-heading">You don't have any order.</h5>
+							<a href="#" class="btn btn-main">Order Now!</a>
+						</div>
+						<div class="order-content1">
+							<div class="orders-list">
+								<div class="row">
+									<div class="col-12">
+										<div class="group-heading clearfix">
+											<h4>
+												Orders from 
+												<a href="#" class="chef-nam">Aradhya’s Kitchen</a>
+												<a href="#" class="btn btn-red">
+													<i class="fa fa-trash"></i> <span>Cancel order</span>
+												</a>
+											</h4>
+											<p>
+												<span>Order id:- <b>#111-3486-3664</b></span>
+												<span>Order will be deliver on:- <b>20/08/2020</b></span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product-grid3">
+											<figure>
+												<a href="#">
+													<img src="../images/product/1.jpg" alt="">
+												</a>
+												<figcaption>
+													<h5><a href="#">Paneer Kulcha</a> <span>$10.77</span></h5>
+													<p>Qty : x <span>3</span></p>
+												</figcaption>
+											</figure>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product-grid3">
+											<figure>
+												<a href="#">
+													<img src="../images/product/2.jpg" alt="">
+												</a>
+												<figcaption>
+													<h5><a href="#">Paneer Kulcha</a> <span>$10.77</span></h5>
+													<p>Qty : x <span>3</span></p>
+												</figcaption>
+											</figure>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product-grid3">
+											<figure>
+												<a href="#">
+													<img src="../images/product/3.jpg" alt="">
+												</a>
+												<figcaption>
+													<h5><a href="#">Paneer Kulcha</a> <span>$10.77</span></h5>
+													<p>Qty : x <span>3</span></p>
+												</figcaption>
+											</figure>
+											</a>
+										</div>
+									</div>
+									<div class="col-12">
+										<div>
+											<div class="delivery-time">
+												<img src="../images/delivery-icon.png" alt="">
+												<div>Delivery on: <span>Mon, 23rd Oct, 2020 7.45pm - 8.00pm</span></div>
+											</div>
+											<div class="subtotal">
+												<h5>
+													<span>Subtotal</span>
+													<span>$32.07</span>
+												</h5>
+												<p>
+													<span>Delivery</span>
+													<span>$3.99</span>
+												</p>
+												<p>
+													<span>Service fee</span>
+													<span>$1.57 </span>
+												</p>
+												<p>
+													<span>Tip </span>
+													<span>$2.00</span>
+												</p>
+											</div>
+											<div class="total-cart">
+												<span>Your bill</span>
+												<span>$ 32.07</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="orders-list">
+								<div class="row">
+									<div class="col-12">
+										<div class="group-heading clearfix">
+											<h4>
+												Orders from 
+												<a href="#" class="chef-nam">Aradhya’s Kitchen</a>
+												<a href="#" class="btn btn-red">
+													<i class="fa fa-trash"></i> <span>Cancel order</span>
+												</a>
+											</h4>
+											<p>
+												<span>Order id:- <b>#111-3486-3664</b></span>
+												<span>Order will be deliver on:- <b>20/08/2020</b></span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product-grid3">
+											<figure>
+												<a href="#">
+													<img src="../images/product/1.jpg" alt="">
+												</a>
+												<figcaption>
+													<h5><a href="#">Paneer Kulcha</a> <span>$10.77</span></h5>
+													<p>Qty : x <span>3</span></p>
+												</figcaption>
+											</figure>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product-grid3">
+											<figure>
+												<a href="#">
+													<img src="../images/product/2.jpg" alt="">
+												</a>
+												<figcaption>
+													<h5><a href="#">Paneer Kulcha</a> <span>$10.77</span></h5>
+													<p>Qty : x <span>3</span></p>
+												</figcaption>
+											</figure>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product-grid3">
+											<figure>
+												<a href="#">
+													<img src="../images/product/3.jpg" alt="">
+												</a>
+												<figcaption>
+													<h5><a href="#">Paneer Kulcha</a> <span>$10.77</span></h5>
+													<p>Qty : x <span>3</span></p>
+												</figcaption>
+											</figure>
+											</a>
+										</div>
+									</div>
+									<div class="col-12">
+										<div>
+											<div class="delivery-time">
+												<img src="../images/delivery-icon.png" alt="">
+												<div>Delivery on: <span>Mon, 23rd Oct, 2020 7.45pm - 8.00pm</span></div>
+											</div>
+											<div class="subtotal">
+												<h5>
+													<span>Subtotal</span>
+													<span>$32.07</span>
+												</h5>
+												<p>
+													<span>Delivery</span>
+													<span>$3.99</span>
+												</p>
+												<p>
+													<span>Service fee</span>
+													<span>$1.57 </span>
+												</p>
+												<p>
+													<span>Tip </span>
+													<span>$2.00</span>
+												</p>
+											</div>
+											<div class="total-cart">
+												<span>Your bill</span>
+												<span>$ 32.07</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<!-- 01 -->
+		<div class="newsletter">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-5">
+						<div class="content-left">
+							<h5>Know it all first!</h5>
+							<p>Never miss any newsletters</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7">
+						<div class="content-right">
+							<form action="">
+								<input type="text" class="form-control" placeholder="Enter your email">
+								<button type="submit" class="btn btn-main">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 02 -->
+		<div class="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="footer-logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae doloribus culpa nemo,
+							sequi
+							cum repellat illum hic laboriosam nihil eaque.</p>
+						<ul class="footer-social">
+							<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-3 col-6">
+								<h5>Why ChefNala</h5>
+								<ul class="footer-quick-link">
+									<li><a href="#">Safety & Trust</a></li>
+									<li><a href="#">Privacy policy</a></li>
+									<li><a href="#">FAQ</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4 col-6">
+								<h5>Explore more</h5>
+								<ul class="footer-quick-link">
+									<li><a href="#">Join as chef</a></li>
+									<li><a href="#">Join as foodie</a></li>
+									<li><a href="#">Careers</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-5">
+								<h5>Connect with Founder</h5>
+								<ul class="footer-address">
+									<li>
+										<i class="fa fa-map-marker"></i>
+										<span>ChefNala <br> New York City, USA</span>
+									</li>
+									<li>
+										<i class="fa fa-phone"></i>
+										<span>Call Us: <a href="tel:+123-456-7890">123-456-7890</a></span>
+									</li>
+									<li>
+										<i class="fa fa-envelope-o"></i>
+										<span>Email Us: <br> <a
+												href="mailto:connectchef@gmail.com">connectchef@gmail.com</a></span>
+									</li>
+									<li>
+										<i class="fa fa-fax"></i>
+										<span>Fax: <a href="#">123-456-789</a></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 03 -->
+		<div class="copyright">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-md-6 col-12">
+						<p>© 2020 ChefNala. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-12">
+						<ul>
+							<li><img src="images/pay/1.png" alt=""></li>
+							<li><img src="images/pay/2.png" alt=""></li>
+							<li><img src="images/pay/3.png" alt=""></li>
+							<li><img src="images/pay/4.png" alt=""></li>
+							<li><img src="images/pay/5.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Zipcode Modal -->
+	<div aria-hidden="true" aria-labelledby="zipcode-modal-Label" class="modal fade" id="zipcode-modal" role="dialog"
+		tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Zip Code</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">
+							<img src="../images/close.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<label for="">Enter your zipcode</label>
+						<input type="text" class="form-control">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Jquery Min -->
+	<script src="../js/jquery.min.js"></script>
+
+	<!-- Popper Min -->
+	<script src="../plugins/bootstrap/js/popper.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Owl Carousel -->
+	<script src="../plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+	<!-- Star Rating -->
+	<script src="../plugins/star_rating/star-rating.js"></script>
+
+	<!-- Quantity -->
+	<script src="../plugins/quantity.js"></script>
+
+	<!-- Phone -->
+	<script src="../plugins/phone/phone.js"></script>
+
+	<!-- Select -->
+	<script src="../plugins/select/select.js"></script>
+
+	<!-- Custom Js -->
+	<script src="../js/default.js"></script>
+</body>
+
+</html>

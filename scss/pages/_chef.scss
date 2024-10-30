@@ -1,0 +1,456 @@
+// ----- Chef Account Banner
+#chef-account-banner {
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top:80px;
+    position: relative;
+    &:before {
+        content:'';
+        position: absolute;
+        left:0;
+        bottom:-60%;
+        width:100%;
+        height:100%;
+        background-color:$white-clr;
+    }
+    .hiw-box {
+        .group-heading {
+            h4 {
+                font-size:28px;
+                line-height:34px;
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    font-size:18px;
+                    line-height:24px;
+                }
+            }
+        }
+        ul {
+            li {
+                margin-bottom:20px;
+                &:last-child {
+                    margin-bottom:0;
+                }
+                figure {
+                    margin-bottom:0;
+                    position: relative;
+                    img {
+                        width:80px;
+                        height:80px;
+                        // Max Width 991px - Min Width 768px
+                        @media (min-width: $break_767 + 1px) and (max-width: $break_991) {
+                            height:70px;
+                            width:70px;
+                        }
+                        // Max Width 767px
+                        @media only screen and (max-width: $break_767) {
+                            height:60px;
+                            width:60px;
+                        }
+                    }
+                    figcaption {
+                        position: absolute;
+                        top: 50%;
+                        left: 100px;
+                        transform: translateY(-50%);
+                        // Max Width 991px - Min Width 768px
+                        @media (min-width: $break_767 + 1px) and (max-width: $break_991) {
+                            left:90px;
+                        }
+                        // Max Width 767px
+                        @media only screen and (max-width: $break_767) {
+                            left:70px;
+                        }
+                        h5 {
+                            margin-bottom:5px;
+                            font-weight:600;
+                            font-size:16px;
+                            line-height:22px;
+                        }
+                        p {
+                            margin-bottom:0;
+                            color:$grey2-clr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .white-box {
+        background-color:$white-clr;
+        padding:50px;
+        box-shadow:$shadow-1;
+        // Max Width 991px - Min Width 768px
+        @media (min-width: $break_767 + 1px) and (max-width: $break_991) {
+            padding:30px;
+        }
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            padding:20px;
+            margin-bottom:30px;
+        }      
+        .form-group {
+            label {
+                margin-bottom:0;
+            }
+            h5 {
+                font-weight: 600;
+                margin-bottom: 5px;
+                font-size:14px;
+            }
+            p {
+                margin-bottom:15px;
+                color:$grey2-clr;
+            }
+            .custom-radio {
+                margin-right:15px;
+            }
+            .custom-checkbox {
+                a {
+                    color:$black-light-clr;
+                    text-decoration: underline;
+                    &:hover {
+                        color:$primary-clr;
+                    }
+                }
+            }
+        }
+        button {
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                display: block;
+                width:100%;
+            }
+        }
+    }
+}
+
+// ----- Chef Join Benifit
+#chef-account-benifit {
+    padding:80px 0;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding:40px 0;
+    }
+    .group-heading {
+        text-align: center;
+        h4 {
+            margin-bottom:15px;
+        }
+    }
+    .grid-left {
+        .video-sec {
+            position: relative;
+            margin-bottom:30px;
+            img {
+                width:100%;
+            }
+            a {
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform:translateX(-50%) translateY(-50%);
+                img {
+                    height:3em;
+                    width:auto;
+                }
+            }
+        }
+        .video-btn {
+            text-align: center;
+            a {
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    display: block;
+                    
+                }
+            }
+        }
+    }
+    .grid-right {
+        .list-items {
+            li {
+                margin-bottom:20px;
+                position: relative;
+                padding-left:25px;
+                &:last-child {
+                    margin-bottom:0;
+                }
+                h5 {
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    font-size:16px;
+                    span {
+                        position: absolute;
+                        left:0;
+                    }
+                }
+                p {
+                    margin-bottom:0;
+                    color:$grey2-clr;
+                }
+            }
+        }
+    }
+}
+
+// ----- How creator get payment
+#creator-paid {
+    background-color:$grey-clr;
+    padding-top:80px;
+    padding-bottom:30px;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding-top:40px;
+        padding-bottom:10px;
+    }
+    figure {
+        margin-bottom:50px;
+        position: relative;
+        padding-left: 120px;
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            margin-bottom:30px;
+            padding-left:80px;
+        }
+        img {
+            max-width: 100px;
+            max-height: 70px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                width: 60px;
+            }
+        }
+        figcaption {
+            h5 {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 10px;
+                font-weight: 600;
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    font-size:16px;
+                    line-height:22px;
+                }
+            }
+            p {
+                margin-bottom:0;
+                color:$grey2-clr;
+            }
+        }
+    }
+}
+
+// ----- Grow your business
+#grow-business {
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding-bottom:20px;
+    }
+    .content {
+        padding-left:100px;
+        padding-top:30px;
+        padding-bottom:30px;
+        max-width: 550px;
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            padding-left:0;
+        }
+        h4 {
+            font-size:22px;
+            font-weight: 700;
+            line-height:28px;
+            margin-bottom:30px;
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                font-size:18px;
+                line-height:24px;
+                margin-bottom:15px;
+            }
+        }
+        p {
+            margin-bottom:30px;
+            color:$grey2-clr;
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                margin-bottom:15px;
+            }
+        }
+        a {
+            min-width:200px;
+            // Max Width 767px
+                // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                display: block;
+                width:100%;
+            }
+        }
+    }
+    img {
+        width:100%;
+    }
+}
+
+// ----- Chef Bio Banner
+#chef-bio-banner {
+    padding-bottom:30px;
+    border-bottom:1px solid darken($grey-clr, 10%);
+    img {
+        width:100%;
+    }
+    .content {
+        display: flex;
+        align-items: flex-end;
+        margin-top: -60px;
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            margin-top: -20px;
+        }
+        .user-image {
+            width: 150px;
+            height: 150px;
+            border: 5px solid $white-clr;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                width:100px;
+                height:100px;
+                margin-right: 10px;
+            }
+            img {
+                width:100%;
+                height:100%;
+            }
+        }
+        .user-details {
+            h5 {
+                font-size: 26px;
+                line-height: 32px;
+                font-weight: 600;
+                margin-bottom: 0;
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            p {
+                color: $grey2-clr;
+                margin-bottom: 10px;
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    margin-bottom: 0px;
+                }
+            }
+            .cs-rating {
+                display: flex;
+                .review {
+                    color:$grey2-clr;
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+}
+
+// ----- Chef Menu
+#chef-menu {    
+    border-bottom:2px solid $grey-clr;
+    /* Grid Left */
+    .grid-left {
+        padding-top:40px;
+        .content-1 {
+            margin-bottom: 30px;
+            .this-title {
+                font-size: 18px;
+                line-height:24px;
+                font-weight: 600;
+                margin-bottom:10px;
+                display: block;
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    font-size: 16px;
+                    line-height:22px;
+                }
+            }
+            ul {
+                overflow-x: auto;
+                display: flex;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                li {
+                    margin-right:5px;
+                    &:last-child {
+                        margin-right:0;
+                    }
+                    .text-radio {
+                        margin-bottom:0;
+                        .text-radio-label {
+                            white-space:pre;
+                        }
+                    }
+                }
+            }
+        }
+        .content-menu {
+            .grid-list {
+                margin-bottom:40px;
+            }
+        }
+    }
+    /* Grid Right */    
+    .br-m {
+        border-left: 1px solid darken($grey-clr, 10%);
+        // Max Width 991px
+        @media only screen and (max-width: $break_991) {
+            display: none;
+        }
+    }
+    .grid-right {
+        padding-top:40px;
+    }
+}
+
+// ----- About Chef
+#about-chef {
+    padding:50px 0;
+    img {
+        width:100%;
+    }
+    .content {
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            margin-top:30px;
+        }
+        h4 {
+            font-size:22px;
+            font-weight: 700;
+            line-height:28px;
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                font-size:18px;
+                line-height:24px;
+            }
+        }
+        p {
+            color:$grey2-clr;
+        }
+        a {
+            min-width:200px;
+            // Max Width 767px
+                // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                display: block;
+                width:100%;
+            }
+        }
+    }
+}

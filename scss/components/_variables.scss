@@ -1,0 +1,38 @@
+// ----- Font
+$base-fz                :   14px !default;
+$primary-ff             :   'Epilogue', sans-serif;
+
+// ----- Color
+$no-clr                 :   transparent;
+$white-clr              :   #ffffff;
+$grey-clr               :   #f5f5f5;
+$grey2-clr              :   #7A8193;
+$grey3-clr              :   #e6e6e6;
+$black-clr              :   #000000;
+$black-light-clr        :   #101010;
+$yellow-clr             :   #f89820;
+$primary-clr            :   #56cc00;
+$secondary-clr          :   #ff4c3b;
+
+// ----- Shadow
+$shadow-1               :   0px 5px 10px rgba(137, 153, 170, 0.2);
+
+// ----- Media Queries
+$break_1280				:   1280px;
+$break_1240				:   1240px;
+$break_1080				:   1080px;
+$break_1024				:   1024px;
+$break_991				:   991px;
+$break_850				:   850px;
+$break_767				:   767px;
+$break_576				:   576px;
+
+
+/*
+
+@media (min-width: $break_767 + 1px) and (max-width: $break_1240) {}
+
+// --------------------------------
+@media (max-width: $break_550) {}
+
+*/

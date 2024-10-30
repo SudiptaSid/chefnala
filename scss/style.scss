@@ -1,0 +1,55 @@
+// ----- Google Font
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap');
+
+// ----- Bootstrap
+@import "../plugins/bootstrap/scss/bootstrap.scss";
+
+// ----- Font Awesome
+@import "../plugins/font-awesome/scss/font-awesome.scss";
+
+// ----- Owl Carousel
+@import "../plugins/owl-carousel/scss/owl.carousel.scss";
+@import "../plugins/owl-carousel/scss/owl.theme.default.scss";
+
+// ----- Star Rating
+@import "../plugins/star_rating/star_rating.scss";
+
+// ----- Phone
+@import "../plugins/phone/phone.css";
+
+// ----- Select
+@import "../plugins/select/select.scss";
+
+// ----- Jquery UI
+@import "../plugins/Jquery-ui/jquery-ui.css";
+
+// ----- Jquery UI Multi select
+@import "../plugins/jquery-ui-multi-dates-picker/jquery-ui.multi-dates-picker.scss";
+
+// ----- Scss
+/* Defaults */
+@import "components/variables";
+@import "components/reset";
+@import "components/buttons";
+@import "components/form";
+@import "components/header";
+@import "components/footer";
+@import "components/parts";
+@import "components/heading";
+@import "components/product-grid";
+@import "components/review-grid";
+@import "components/owl-edit";
+@import "components/bootstrap-edit";
+
+/* Pages */
+@import "pages/coming-soon";
+@import "pages/home";
+@import "pages/chef";
+@import "pages/foodie";
+@import "pages/user-account";
+@import "pages/user-account-advance";
+@import "pages/cart";
+
+/* Chef Dashboard */
+@import "chef-dashboard/header";
+@import "chef-dashboard/dashboard";

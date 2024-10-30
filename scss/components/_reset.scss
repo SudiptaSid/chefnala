@@ -1,0 +1,66 @@
+// ----- Reset
+body {
+    font-family:$primary-ff;
+    font-size: $base-fz;
+    line-height:1.5;
+    font-weight:400;
+    color:$black-light-clr;
+    background-color:$white-clr;
+    overflow-x: hidden;
+    // Max Width 1080px
+    @media only screen and (max-width: $break_1080) {
+        min-width:100%;
+    }
+    &.sidebar1-active {
+        overflow: hidden;
+    }
+}
+ul,ol {
+    list-style-type:none;
+    padding-left:0px;
+    margin-bottom:0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight:500;
+    margin-bottom:15px;
+    line-height:1.2;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// ----- Chef Dashboard Page Wrapper
+.page-wrapper {
+    margin-left:260px;
+    transition: 0.3s;
+    // Max Width 767x
+    @media only screen and (max-width: $break_767) {
+        margin-left:0;
+        width:100%;
+    }
+    &.stick-left {
+        margin-left:0;
+        // Max Width 767x
+        @media only screen and (max-width: $break_767) {
+            margin-left:260px;
+        }
+    }
+}
+
+// Min Width 1080px
+@media only screen and (min-width: $break_1080) {
+    .container-fluid {
+        padding-left:50px;
+        padding-right:50px;
+    }
+}
+// Min Width 1240px
+@media only screen and (min-width: $break_1240) {
+    .container-fluid {
+        padding-left:100px;
+        padding-right:100px;
+    }
+}

@@ -1,0 +1,988 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>ChefNala</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../images/favicon.png">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<!-- Page Wrapper -->
+	<main class="page-wrapper">
+		<!-- Header -->
+		<header id="chef-dashboard-header">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col">
+						<div class="sidebar-tog">
+							<button id="sidebar2-toggle">
+								<img src="../images/menu.svg" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="col">
+						<div class="logo-sec">
+							<a href="../index.html">
+							<img src="../images/logo.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col">
+						<div class="back-home">
+							<a href="../index.html">
+								<i class="fa fa-angle-double-left"></i> Go to home
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Sidebar -->
+		<aside id="chef-dashboard-sidebar">
+			<div class="profile-sec">
+				<div class="img-sec">
+					<img src="../images/avatar/1.jpg" alt="">
+				</div>
+				<div class="details-sec">
+					<h5>Profile name</h5>
+					<a href="profile.html" class="btn btn-main">My Profile</a>
+				</div>
+			</div>
+			<div class="menu-items">
+				<ul>
+					<li>
+						<a href="availablity.html">
+							<i class="fa fa-calendar"></i> My Availablity
+						</a>
+					</li>
+					<li>
+						<a href="ratings.html">
+							<i class="fa fa-star"></i> My Rating
+						</a>
+					</li>
+					<li>
+						<a href="payment.html">
+							<i class="fa fa-credit-card"></i> Payment
+						</a>
+					</li>
+					<li>
+						<a href="order.html">
+							<i class="fa fa-shopping-cart"></i> My Orders
+						</a>
+					</li>
+					<li>
+						<a href="contact.html">
+							<i class="fa fa-phone"></i> Contact Us
+						</a>
+					</li>
+					<li>
+						<a href="menu-builder.html" class="active">
+							<i class="fa fa-bars"></i> Menu Builder
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<!-- Chef Dashboard -->
+		<section id="chef-dashboard">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<!-- My Menu -->
+						<div id="my-menu-builder">
+							<div class="section-heading">
+								<h2>My Menu</h2>
+							</div>
+							<div class="info-box">
+								<span>
+									<i class="fa fa-info"></i>
+								</span>
+								View, edit or create your own menu
+							</div>
+							<form action="">
+								<div class="row">
+									<div class="col-lg-6 col-md-6">
+										<div class="grey-box">
+											<div class="grey-box-heading">
+												<h4>Filters</h4>
+											</div>
+											<div class="grey-box-body">
+												<div class="panes">
+													<label for="">You can filter by weekday.</label>
+													<select name="" id="" class="form-control">
+														<option value="">Anyday</option>
+														<option value="">Monday</option>
+														<option value="">Wednesday</option>
+														<option value="">Friday</option>
+													</select>
+												</div>
+												<div class="panes">
+													<label for="">You can filter by food type.</label>
+													<select name="" id="" class="form-control">
+														<option value="">All</option>
+														<option value="">Breakfast</option>
+														<option value="">Lunch</option>
+														<option value="">Dinner</option>
+														<option value="">Dessert</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<div class="grey-box">
+											<div class="grey-box-heading">
+												<h4>Things to Note!</h4>
+											</div>
+											<div class="grey-box-body">
+												<div class="panes">
+													<label for="">You can print individual labels.</label>
+													<a href="#" class="btn-icon btn-print">
+														<span>Print</span>
+														<span>
+															<i class="fa fa-print"></i>
+														</span>
+													</a>
+												</div>
+												<div class="panes">
+													<label for="">You can click in to edit a dish.</label>
+													<a href="#" class="btn-icon btn-print">
+														<span>Print</span>
+														<span>
+															<i class="fa fa-print"></i>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row mt-5">
+									<div class="col-12">
+										<div class="menu-search">
+											<input type="text" class="form-control" placeholder="Search by food name...">
+										</div>
+										<div class="menu-table">
+											<ul class="nav nav-pills gift-tab" id="pills-tab2" role="tablist">
+												<li class="nav-item">
+													<a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Dish Catalogue (<span>3</span>)</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Live Dishes (<span>3</span>)</a>
+												</li>
+											</ul>
+											<div class="tab-content" id="pills-tabContent2">
+												<div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+													<div class="table-responsive">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th scope="col">Product</th>
+																	<th scope="col">Price</th>
+																	<th scope="col">Description</th>
+																	<th scope="col">Availability/Day</th>
+																	<th scope="col">Limit/Day</th>
+																	<th scope="col">Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>
+																		<div class="pro-details">
+																			<a href="#" class="pro-img">
+																				<img src="../images/product/1.jpg" alt="">
+																			</a>
+																			<a href="#" class="pro-name">Mutton  Keema  Masala</a>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="pro-price">$9.32</span>
+																	</td>
+																	<td>
+																		<div class="pro-des">Mutton Keema Masala Recipe is a gravy curry recipe made with minced meat.</div>
+																	</td>
+																	<td>
+																		<ul class="pro-day">
+																			<li>Monday</li>
+																			<li>Tuesday</li>
+																			<li>Wednesday</li>
+																			<li>Saturday</li>
+																		</ul>
+																	</td>
+																	<td>
+																		<span class="pro-limit">30</span>
+																	</td>
+																	<td>
+																		<div class="pro-actions">
+																			<a href="" class="btn-icon btn-edit" data-toggle="modal" data-target="#menu-builder-modal">
+																				<span>Edit</span>
+																				<span>
+																					<i class="fa fa-pencil"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-print">
+																				<span>Print</span>
+																				<span>
+																					<i class="fa fa-print"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-delete">
+																				<span>Delete</span>
+																				<span>
+																					<i class="fa fa-trash"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon">
+																				<span>block</span>
+																				<span>
+																					<i class="fa fa-lock"></i>
+																				</span>
+																			</a>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="pro-details">
+																			<a href="#" class="pro-img">
+																				<img src="../images/product/2.jpg" alt="">
+																			</a>
+																			<a href="#" class="pro-name">Mutton  Keema  Masala</a>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="pro-price">$9.32</span>
+																	</td>
+																	<td>
+																		<div class="pro-des">Mutton Keema Masala Recipe is a gravy curry recipe made with minced meat.</div>
+																	</td>
+																	<td>
+																		<ul class="pro-day">
+																			<li>Monday</li>
+																			<li>Tuesday</li>
+																			<li>Wednesday</li>
+																			<li>Saturday</li>
+																		</ul>
+																	</td>
+																	<td>
+																		<span class="pro-limit">30</span>
+																	</td>
+																	<td>
+																		<div class="pro-actions">
+																			<a href="" class="btn-icon btn-edit" data-toggle="modal" data-target="#menu-builder-modal">
+																				<span>Edit</span>
+																				<span>
+																					<i class="fa fa-pencil"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-print">
+																				<span>Print</span>
+																				<span>
+																					<i class="fa fa-print"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-delete">
+																				<span>Delete</span>
+																				<span>
+																					<i class="fa fa-trash"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon">
+																				<span>block</span>
+																				<span>
+																					<i class="fa fa-lock"></i>
+																				</span>
+																			</a>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="pro-details">
+																			<a href="#" class="pro-img">
+																				<img src="../images/product/3.jpg" alt="">
+																			</a>
+																			<a href="#" class="pro-name">Mutton  Keema  Masala</a>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="pro-price">$9.32</span>
+																	</td>
+																	<td>
+																		<div class="pro-des">Mutton Keema Masala Recipe is a gravy curry recipe made with minced meat.</div>
+																	</td>
+																	<td>
+																		<ul class="pro-day">
+																			<li>Monday</li>
+																			<li>Tuesday</li>
+																			<li>Wednesday</li>
+																			<li>Saturday</li>
+																		</ul>
+																	</td>
+																	<td>
+																		<span class="pro-limit">30</span>
+																	</td>
+																	<td>
+																		<div class="pro-actions">
+																			<a href="" class="btn-icon btn-edit" data-toggle="modal" data-target="#menu-builder-modal">
+																				<span>Edit</span>
+																				<span>
+																					<i class="fa fa-pencil"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-print">
+																				<span>Print</span>
+																				<span>
+																					<i class="fa fa-print"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-delete">
+																				<span>Delete</span>
+																				<span>
+																					<i class="fa fa-trash"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon">
+																				<span>block</span>
+																				<span>
+																					<i class="fa fa-lock"></i>
+																				</span>
+																			</a>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+														<a href="" class="btn btn-main" data-toggle="modal" data-target="#menu-builder-modal">Add New Dish</a>
+													</div>
+													<div class="cs-pagination">
+														<ul>
+															<li>
+																<a href="#">
+																	<i class="fa fa-angle-double-left"></i>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<i class="fa fa-angle-left"></i>
+																</a>
+															</li>
+															<li>
+																<a href="#" class="active">1</a>
+															</li>
+															<li>
+																<a href="#">2</a>
+															</li>
+															<li>
+																<a href="#">3</a>
+															</li>
+															<li>
+																<a href="#">
+																	<i class="fa fa-angle-right"></i>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<i class="fa fa-angle-double-right"></i>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+													<div class="table-responsive">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th scope="col">Product</th>
+																	<th scope="col">Price</th>
+																	<th scope="col">Description</th>
+																	<th scope="col">Availability/Day</th>
+																	<th scope="col">Limit/Day</th>
+																	<th scope="col">Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>
+																		<div class="pro-details">
+																			<a href="#" class="pro-img">
+																				<img src="../images/product/4.jpg" alt="">
+																			</a>
+																			<a href="#" class="pro-name">Mutton  Keema  Masala</a>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="pro-price">$9.32</span>
+																	</td>
+																	<td>
+																		<div class="pro-des">Mutton Keema Masala Recipe is a gravy curry recipe made with minced meat.</div>
+																	</td>
+																	<td>
+																		<ul class="pro-day">
+																			<li>Monday</li>
+																			<li>Tuesday</li>
+																			<li>Wednesday</li>
+																			<li>Saturday</li>
+																		</ul>
+																	</td>
+																	<td>
+																		<span class="pro-limit">30</span>
+																	</td>
+																	<td>
+																		<div class="pro-actions">
+																			<a href="" class="btn-icon btn-edit" data-toggle="modal" data-target="#menu-builder-modal">
+																				<span>Edit</span>
+																				<span>
+																					<i class="fa fa-pencil"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-print">
+																				<span>Print</span>
+																				<span>
+																					<i class="fa fa-print"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-delete">
+																				<span>Delete</span>
+																				<span>
+																					<i class="fa fa-trash"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon">
+																				<span>block</span>
+																				<span>
+																					<i class="fa fa-lock"></i>
+																				</span>
+																			</a>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="pro-details">
+																			<a href="#" class="pro-img">
+																				<img src="../images/product/5.jpg" alt="">
+																			</a>
+																			<a href="#" class="pro-name">Mutton  Keema  Masala</a>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="pro-price">$9.32</span>
+																	</td>
+																	<td>
+																		<div class="pro-des">Mutton Keema Masala Recipe is a gravy curry recipe made with minced meat.</div>
+																	</td>
+																	<td>
+																		<ul class="pro-day">
+																			<li>Monday</li>
+																			<li>Tuesday</li>
+																			<li>Wednesday</li>
+																			<li>Saturday</li>
+																		</ul>
+																	</td>
+																	<td>
+																		<span class="pro-limit">30</span>
+																	</td>
+																	<td>
+																		<div class="pro-actions">
+																			<a href="" class="btn-icon btn-edit" data-toggle="modal" data-target="#menu-builder-modal">
+																				<span>Edit</span>
+																				<span>
+																					<i class="fa fa-pencil"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-print">
+																				<span>Print</span>
+																				<span>
+																					<i class="fa fa-print"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-delete">
+																				<span>Delete</span>
+																				<span>
+																					<i class="fa fa-trash"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon">
+																				<span>block</span>
+																				<span>
+																					<i class="fa fa-lock"></i>
+																				</span>
+																			</a>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="pro-details">
+																			<a href="#" class="pro-img">
+																				<img src="../images/product/6.jpg" alt="">
+																			</a>
+																			<a href="#" class="pro-name">Mutton  Keema  Masala</a>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="pro-price">$9.32</span>
+																	</td>
+																	<td>
+																		<div class="pro-des">Mutton Keema Masala Recipe is a gravy curry recipe made with minced meat.</div>
+																	</td>
+																	<td>
+																		<ul class="pro-day">
+																			<li>Monday</li>
+																			<li>Tuesday</li>
+																			<li>Wednesday</li>
+																			<li>Saturday</li>
+																		</ul>
+																	</td>
+																	<td>
+																		<span class="pro-limit">30</span>
+																	</td>
+																	<td>
+																		<div class="pro-actions">
+																			<a href="" class="btn-icon btn-edit" data-toggle="modal" data-target="#menu-builder-modal">
+																				<span>Edit</span>
+																				<span>
+																					<i class="fa fa-pencil"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-print">
+																				<span>Print</span>
+																				<span>
+																					<i class="fa fa-print"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon btn-delete">
+																				<span>Delete</span>
+																				<span>
+																					<i class="fa fa-trash"></i>
+																				</span>
+																			</a>
+																			<a href="" class="btn-icon">
+																				<span>block</span>
+																				<span>
+																					<i class="fa fa-lock"></i>
+																				</span>
+																			</a>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+														<a href="" class="btn btn-main" data-toggle="modal" data-target="#menu-builder-modal">Add New Dish</a>
+													</div>
+													<div class="cs-pagination">
+														<ul>
+															<li>
+																<a href="#">
+																	<i class="fa fa-angle-double-left"></i>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<i class="fa fa-angle-left"></i>
+																</a>
+															</li>
+															<li>
+																<a href="#" class="active">1</a>
+															</li>
+															<li>
+																<a href="#">2</a>
+															</li>
+															<li>
+																<a href="#">3</a>
+															</li>
+															<li>
+																<a href="#">
+																	<i class="fa fa-angle-right"></i>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<i class="fa fa-angle-double-right"></i>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<!-- Footer -->
+		<footer>
+			<!-- 01 -->
+			<div class="newsletter">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-md-5">
+							<div class="content-left">
+								<h5>Know it all first!</h5>
+								<p>Never miss any newsletters</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-7">
+							<div class="content-right">
+								<form action="">
+									<input type="text" class="form-control" placeholder="Enter your email">
+									<button type="submit" class="btn btn-main">Subscribe</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 02 -->
+			<div class="main-footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="footer-logo">
+								<a href="#">
+									<img src="../images/logo.png" alt="">
+								</a>
+							</div>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae doloribus culpa nemo,
+								sequi
+								cum repellat illum hic laboriosam nihil eaque.</p>
+							<ul class="footer-social">
+								<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-lg-8">
+							<div class="row">
+								<div class="col-lg-3 col-6">
+									<h5>Why ChefNala</h5>
+									<ul class="footer-quick-link">
+										<li><a href="#">Safety & Trust</a></li>
+										<li><a href="#">Privacy policy</a></li>
+										<li><a href="#">FAQ</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-6">
+									<h5>Explore more</h5>
+									<ul class="footer-quick-link">
+										<li><a href="#">Join as chef</a></li>
+										<li><a href="#">Join as foodie</a></li>
+										<li><a href="#">Careers</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-5">
+									<h5>Connect with Founder</h5>
+									<ul class="footer-address">
+										<li>
+											<i class="fa fa-map-marker"></i>
+											<span>ChefNala <br> New York City, USA</span>
+										</li>
+										<li>
+											<i class="fa fa-phone"></i>
+											<span>Call Us: <a href="tel:+123-456-7890">123-456-7890</a></span>
+										</li>
+										<li>
+											<i class="fa fa-envelope-o"></i>
+											<span>Email Us: <br> <a
+													href="mailto:connectchef@gmail.com">connectchef@gmail.com</a></span>
+										</li>
+										<li>
+											<i class="fa fa-fax"></i>
+											<span>Fax: <a href="#">123-456-789</a></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 03 -->
+			<div class="copyright">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-6 col-12">
+							<p>© 2020 ChefNala. All rights reserved.</p>
+						</div>
+						<div class="col-md-6 col-12">
+							<ul>
+								<li><img src="../images/pay/1.png" alt=""></li>
+								<li><img src="../images/pay/2.png" alt=""></li>
+								<li><img src="../images/pay/3.png" alt=""></li>
+								<li><img src="../images/pay/4.png" alt=""></li>
+								<li><img src="../images/pay/5.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>	
+
+	<!-- Menu Builder Modal -->
+	<div aria-hidden="true" class="modal fade" id="menu-builder-modal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Add New Dish</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">
+							<img src="../images/close.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="form-group">
+							<label for="">Food Name</label>
+							<input type="text" class="form-control" placeholder="Ex: Paneer Tikka Masala">
+						</div>
+						<div class="form-group">
+							<label for="">Food Description</label>
+							<ul class="content-list">
+								<li>Explain your dish and mention the following aspects:</li>
+								<li>Top two flavors (examples: tangy, sweet, spicy, aromatic)</li>
+								<li>Consistency (examples: juicy, crunchy, smooth, creamy, rich)</li>
+								<li>Top two ingredients used (examples: slow roasted chicken, chickpeas)</li>
+								<li>A personal or historical fact about the dish (example: This recipe was </li>
+								<li>handed down from my mother and is a family favorite!)</li>
+							</ul>
+							<textarea name="" id="" rows="6" class="form-control"></textarea>
+							<div class="text-right">
+								<small>Max character 300</small>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="">Upload your image</label>
+							<div class="file-upload">
+								<div class="image-upload-wrap">
+									<input accept="image/*" class="file-upload-input" onchange="readURL(this);" type='file'>
+									<div class="drag-text">
+										<h3>Drag and drop a file or select add Image</h3>
+									</div>
+								</div>
+								<div class="file-upload-content">
+									<img alt="your image" class="file-upload-image" src="#">
+									<div class="image-title-wrap">
+										<button class="remove-image" onclick="removeUpload()" type="button">Remove <span class="image-title">Uploaded Image</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="">Weekly Availability</label>
+							<small>Pick days of the week that this item will be available for purchase. The food item will be active (published on your menu) on the days that are checked off.</small>
+							<ul class="checkbox-list">
+								<li>
+									<label class="custom-checkbox">Sunday
+										<input checked="checked" type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Monday
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Tuesday
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Wednesday
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Thursday
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Friday
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Saturday
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="form-group">
+							<label for="">Item Order Limit</label>
+							<small>How many of this item you want to offer on a delivery day (7-100).</small>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<div class="form-group">
+							<label for="">Portion size</label>
+							<small>Ex: "10 oz. container", "2 pieces", etc.</small>
+							<div class="row">
+								<div class="col-md-6 col-12 mb-2 mb-md-0">
+									<input type="text" class="form-control" placeholder="10">
+								</div>
+								<div class="col-md-6 col-12">
+									<select name="" id="" class="form-control">
+										<option value="">Oz Container</option>
+										<option value="">Pieces</option>
+										<option value="">Other</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="">Food Type</label>
+							<select name="" id="" class="form-control">
+								<option value="">Breakfast</option>
+								<option value="">Lunch</option>
+								<option value="">Dinner</option>
+								<option value="">Side</option>
+								<option value="">Starter</option>
+								<option value="">Appetizer</option>
+								<option value="">Desert</option>
+							</select>
+						</div>						
+						<div class="form-group">
+							<label for="">Price</label>
+							<small>We suggest you set your main menu item prices between $4.99 - $9.99, your side item prices between $1.99 - $5.99, and your sauces between $0.99 - 2.99. All food items should end with either .49 or .99. For example: $5.49 or $9.99</small>
+							<input type="text" class="form-control" placeholder="Ex. $1" style="max-width:120px;">
+						</div>
+						<div class="form-group">
+							<label for="">Expires in</label>
+							<input type="text" class="form-control" placeholder="4" style="max-width:120px; display: inline-block;"> days
+						</div>
+						<div class="form-group">
+							<label for="">Ingredients</label>
+							<small>Ex: Organic bone-in chicken, coriander, fenugreek, black pepper, mustard seeds, cinnamon stick, onions, garlic, ginger, tomatoes, turmeric, salt, olive oil, lemon juice, green chilies, and coconut milk.</small>
+							<input type="text" class="form-control" placeholder="black pepper / cinnamon stick">
+						</div>
+						<div class="form-group">
+							<label for="">Reheating Instructions</label>
+							<small>Ex: Beware of the bones. Place into a bowl & microwave for 1-2 min, stirring midway through. Or heat in a saucepan with 1 tbsp water over low heat for 4-5 min. Let it cool for a minute & enjoy!</small>
+							<textarea name="" id="" rows="6" class="form-control"></textarea>
+							<div class="text-right">
+								<small>Max character 300</small>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="">Add Tag</label>
+							<ul class="checkbox-list">
+								<li>
+									<label class="custom-checkbox">Vegan (No animal products like eggs, butter, ghee, honey, or milk)
+										<input checked="checked" type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Vegetarian
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Non-Vegetarian
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Contains Nuts
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Halal (meat prepared in accordance with Islamic law)
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Organic (Made from 100% organic ingredients)
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Spicy
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">Dairy Free
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<button class="btn btn-main btn-block">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Jquery Min -->
+	<script src="../js/jquery.min.js"></script>
+
+	<!-- Popper Min -->
+	<script src="../plugins/bootstrap/js/popper.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Owl Carousel -->
+	<script src="../plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+	<!-- Star Rating -->
+	<script src="../plugins/star_rating/star-rating.js"></script>
+
+	<!-- Quantity -->
+	<script src="../plugins/quantity.js"></script>
+
+	<!-- Phone -->
+	<script src="../plugins/phone/phone.js"></script>
+
+	<!-- Select -->
+	<script src="../plugins/select/select.js"></script>
+
+	<!-- Jquery UI -->
+	<script src="../plugins/Jquery-ui/jquery-ui.min.js"></script>
+
+	<!-- Jquery UI Multi select -->
+	<script src="../plugins/jquery-ui-multi-dates-picker/jquery-ui.multidatespicker.js"></script>
+
+	<!-- Custom Js -->
+	<script src="../js/default.js"></script>
+</body>
+
+</html>

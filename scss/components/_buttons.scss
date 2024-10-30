@@ -1,0 +1,178 @@
+// ----- Button
+.btn {
+    font-size:14px;
+    line-height:20px;
+    font-weight:600;
+    padding:10px 20px;
+    border:none;
+    border-radius:4px;
+    cursor: pointer;
+    color:$black-clr;
+    background-color:$grey-clr;
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding:8px 20px;
+    }
+    &:focus, &:active, &:hover {
+        color:$black-clr;
+        background-color:$grey3-clr;
+        border:none;
+        outline:none !important;
+        box-shadow:none !important;
+        text-shadow:none;
+    }
+    /* Btn Main */
+    &.btn-main {
+        color:$white-clr;
+        background-color:$primary-clr;
+        &:hover, &:focus, &:active {
+            color:$white-clr;
+            background-color:darken($primary-clr, 5%);
+        }
+    }
+    /* Btn Dark */
+    &.btn-dark {
+        color:$white-clr;
+        background-color:lighten($black-light-clr, 10%);
+        &:hover, &:focus, &:active {
+            color:$white-clr;
+            background-color:$black-light-clr;
+        }
+    }
+    /* Btn Grey */
+    &.btn-grey {
+        color:$white-clr;
+        background-color:$grey2-clr;
+        &:hover, &:focus, &:active {
+            color:$white-clr;
+            background-color:darken($grey2-clr, 5%);;
+        }
+    }
+    /* Btn Red */
+    &.btn-red {
+        color:$white-clr;
+        background-color:$secondary-clr;
+        &:hover, &:focus, &:active {
+            color:$white-clr;
+            background-color:darken($secondary-clr, 5%);;
+        }
+    }
+}
+
+/* CUstom Buttons */
+.btn-icon {
+    display: inline-block;
+    clear: both;
+    span {
+        display: inline-block;
+        transition:0.3s;
+        float: left;
+        &:first-child {
+            color: $black-light-clr;
+            background-color: $grey3-clr;
+            padding: 6px 15px;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 4px 0 0 4px;
+        }
+        &:last-child {
+            color: $white-clr;
+            background-color: darken($grey3-clr, 10%);
+            padding: 6px;
+            font-size: 20px;
+            line-height: 1;
+            min-width: 34px;
+            text-align: center;
+            border-radius: 0 4px 4px 0;
+        }
+    }
+    &:hover {
+        span {
+            &:first-child {
+                background-color: darken($grey3-clr, 10%);
+            }
+            &:last-child {
+                color: $white-clr;
+                background-color: darken($grey3-clr, 20%);
+            }
+        }
+    }
+    /* Btn Print */
+    &.btn-print {
+        span {
+            &:first-child {
+                color: $white-clr;
+                background-color: $yellow-clr;
+            }
+            &:last-child {
+                color: $white-clr;
+                background-color: darken($yellow-clr, 10%);
+            }
+        }
+        &:hover {
+            span {
+                &:first-child {
+                    color: $white-clr;
+                    background-color: darken($yellow-clr, 10%);
+                }
+                &:last-child {
+                    color: $white-clr;
+                    background-color: darken($yellow-clr, 20%);
+                }
+            }
+        }
+    }
+    /* Btn Edit */
+    &.btn-edit {
+        span {
+            &:first-child {
+                color: $white-clr;
+                background-color: $primary-clr;
+            }
+            &:last-child {
+                color: $white-clr;
+                background-color: darken($primary-clr, 10%);
+            }
+        }
+        &:hover {
+            span {
+                &:first-child {
+                    color: $white-clr;
+                    background-color: darken($primary-clr, 10%);
+                }
+                &:last-child {
+                    color: $white-clr;
+                    background-color: darken($primary-clr, 20%);
+                }
+            }
+        }
+    }
+    /* Btn Delete */
+    &.btn-delete {
+        span {
+            &:first-child {
+                color: $white-clr;
+                background-color: $secondary-clr;
+            }
+            &:last-child {
+                color: $white-clr;
+                background-color: darken($secondary-clr, 10%);
+            }
+        }
+        &:hover {
+            span {
+                &:first-child {
+                    color: $white-clr;
+                    background-color: darken($secondary-clr, 10%);
+                }
+                &:last-child {
+                    color: $white-clr;
+                    background-color: darken($secondary-clr, 20%);
+                }
+            }
+        }
+    }
+}

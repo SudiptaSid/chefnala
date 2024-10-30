@@ -1,0 +1,279 @@
+// ----- Hero Banner
+#hero-banner {
+    background-size:cover;
+    background-position:center;
+    position: relative;
+    height: 90vh;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        height:auto;
+    }
+    &:before {
+        content:'';
+        background-color:rgba($black-clr, 0.5);
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    .content {
+        text-align: center;
+        max-width: 650px;
+        margin: auto;
+        @media only screen and (max-width: $break_767) {
+            padding:60px 0;
+        }
+        h1 {
+            margin-bottom:10px;
+            color:$white-clr;
+        }
+        form {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            .input-box {
+                position: relative;
+                width:calc(100% - 150px);
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    width:calc(100% - 100px);
+                }
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                    width: 20px;
+                    z-index: 1;
+                }
+                .form-control {
+                    background-color:rgba($white-clr, 0.8);
+                    padding:0px 15px;
+                    padding-left:50px;
+                    height:55px;
+                    font-size:18px;
+                    line-height:24px;
+                    // Max Width 767px
+                    @media only screen and (max-width: $break_767) {
+                        font-size:14px;
+                        line-height:20px;
+                        height:44px;
+                    }
+                }
+            }
+            button {
+                font-size:18px;
+                line-height:24px;
+                padding:0px 15px;
+                height:55px;
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    font-size:14px;
+                    line-height:20px;
+                    height:44px;
+                    padding:0px 10px;
+                }
+            }
+        }
+    }
+}
+
+// ----- Meet With Creators
+#creators-meet {
+    padding-bottom:80px;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding-bottom:40px;
+    }
+    .left-grid {
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            text-align: center;
+        }
+        h3 {
+            margin-bottom:10px;
+            font-size:24px;
+            line-height:30px;
+            font-weight:700;
+            // Max Width 991px
+            @media only screen and (max-width: $break_991) {
+                font-size:18px;
+                line-height:24px;
+            }
+        }
+        h4 {
+            color:$primary-clr;
+            margin-bottom:20px;
+        }
+        p {
+            margin-bottom:50px;
+            color:$grey2-clr;
+        }
+        .btn {
+            text-transform: capitalize;
+        }
+    }
+    #creator-slider {
+        padding-right:50px;
+        // Max Width 576px
+        @media only screen and (max-width: $break_576) {
+            padding-right:0;
+            margin-top:30px;
+        }
+        .creator-grid {
+            position: relative;
+            .img-sec {
+                max-width: 80%;
+                // Max Width 576px
+                @media only screen and (max-width: $break_576) {
+                    margin:auto;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .details-sec {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                max-width: 300px;
+                width: 100%;
+                padding: 40px 20px;
+                background-color: $white-clr;
+                box-shadow: $shadow-1;
+                transform: translateY(-50%);
+                border:1px solid $grey3-clr;
+                // Max Width 576px
+                @media only screen and (max-width: $break_576) {
+                    position: relative;
+                    top: auto;
+                    transform: translateY(0);
+                    margin: auto;
+                }
+                .name-sec {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    h5 {
+                        margin: 0;
+                        margin-right:15px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 600;
+                    }
+                    .cs-rating {
+                        font-size: 12px;
+                    }
+                }
+                .creator-location {
+                    color:$secondary-clr;
+                    font-size:16px;
+                    line-height:22px;
+                    font-weight:600;
+                }
+            }
+        }
+        .owl-dots {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            .owl-dot {
+                display: block;
+                span {
+                    width: 10px;
+                    height: 10px;
+                    margin: 6px 0;
+                    background: $white-clr;
+                    border: 1px solid $grey2-clr;
+                }
+                &.active, &:focus {
+                    outline:none;
+                    span {
+                        background: $primary-clr;
+                        border-color: $primary-clr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ----- Local Favourite
+#our-favourite {
+    padding:80px 0;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding:40px 0;
+    }
+}
+
+// ----- New On ChefNala
+#new-ChefNala {}
+
+// ----- Party Time Catering
+#party-catering {
+    padding-top:80px;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding-top:40px;
+    }
+}
+
+// ----- Our Mission
+#our-mission {
+    background-color:$grey-clr;
+    padding:80px 20px 0;
+    // Max Width 767px
+    @media only screen and (max-width: $break_767) {
+        padding:40px 15px;
+        text-align: center;
+    }
+    h4 {
+        color:$primary-clr;
+        text-transform: capitalize;
+        margin-bottom:20px;
+    }
+    p {
+        color:$grey2-clr;
+    }
+    img {
+        width:100%;
+    }
+}
+
+// ----- Testimonial
+#testimonial {
+    padding-top:80px;
+    @media only screen and (max-width: $break_767) {
+        padding-top:40px;
+    }
+}
+
+// ----- Brands
+#partners {
+    padding:80px 0;
+    @media only screen and (max-width: $break_767) {
+        padding:40px 0;
+    }
+    ul {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        li {
+            flex:0 0 20%;
+            max-width:25%;
+            a {
+                display: block;
+                padding:0px 5px;
+                img {
+                    max-height: 46px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1265 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>ChefNala</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<!-- Top Header -->
+		<section class="top-header">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-7 col-6">
+						<div class="left-section">
+							<span>Welcome to our store cskart</span>
+							<a href="#">
+								<i class="fa fa-phone"></i> Call Us: 123-456-7890
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-5 col-6">
+						<div class="right-section">
+							<a href="#" class="cs-wishlist"><i class="fa fa-heart"></i> <span>Wishlist</span></a>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-user"></i>
+									My Account
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Account Settings</a>
+									<a class="dropdown-item" href="#">Orders</a>
+									<a class="dropdown-item" href="#">Logout</a>
+								</div>
+							</div>
+							<a href="#" class="mobile-account"><i class="fa fa-user"></i></a>
+							<a href="#" class="btn btn-main account-login">Login</a>
+							<a href="#" class="mobile-cart">
+								<img src="images/cart.svg" alt="">
+								<span>1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Header -->
+		<section id="main-header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="content">
+							<div class="logo-part">
+								<button id="sidebar1-toggle">
+									<img src="images/menu.svg" alt="">
+								</button>
+								<a href="#" id="logo">
+									<img src="images/logo.png" alt="">
+								</a>
+								<div id="zipcode">
+									<img src="images/map-marker.svg" alt="">
+									<input type="text" value="94014" data-toggle="modal" data-target="#zipcode-modal">
+								</div>
+							</div>
+							<div id="search-box">
+								<form action="#">
+									<input type="text" class="form-control" placeholder="Search here...">
+									<img src="images/search.svg" alt="">
+								</form>
+							</div>
+							<div class="desktop-link">
+								<a href="join-as-foodei.html">Join As Foodie</a>
+								<a href="join-creator-club.html">Join Creater Club</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<!-- Mobile Menu -->
+	<div id="sidebar1-menu">
+		<div class="avtr-sec">
+			<div class="img-sec">
+				<img src="images/avatar/1.jpg" alt="">
+			</div>
+			<div class="details-sec">
+				<h5>Profile name</h5>
+				<a href="#">view account</a>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<a href="#.html">Join Creater Club</a>
+			</li>
+			<li>
+				<a href="#.html">Join Foodie Club</a>
+			</li>
+			<li>
+				<a href="#.html">Account</a>
+			</li>
+			<li>
+				<a href="#.html">Setting</a>
+			</li>
+			<li>
+				<a href="#.html">Help</a>
+			</li>
+			<li>
+				<a href="#.html">Promotions</a>
+			</li>
+		</ul>
+		<div class="btn_sec">
+			<div class="app-download">
+				<a href="#">
+					<img src="images/App-Store.png" alt="">
+				</a>
+				<a href="#">
+					<img src="images/Google-App.png" alt="">
+				</a>
+			</div>
+			<a href="sign-in.html" class="btn btn-main btn-block">Sign in</a>
+		</div>
+	</div>
+
+	<!-- Chef Bio Banner -->
+	<section id="chef-bio-banner">
+		<img src="images/chef-pg/banner2.jpg" alt="">
+		<div class="padding-side">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="content">
+							<div class="user-image">
+								<img src="images/avatar/b1.jpg" alt="">
+							</div>
+							<div class="user-details">
+								<h5>Aradhya’s Kitchen</h5>
+								<p>North Indian</p>
+								<div class="cs-rating">
+									<input id="star-rating-demo" value="4" type="number" class="rating" min="0" max="5"
+										step="1" data-size="xs">
+									<span class="review">(162)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Chef Menu -->
+	<section id="chef-menu">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-9 col-md-8">
+					<div class="grid-left">
+						<div class="content-1">
+							<span class="this-title">Pick a delivery day</span>
+							<ul>
+								<li>
+									<label class="text-radio">
+										<input type="radio" name="txt-radio1" checked="checked">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">sun. oct 11</span>
+									</label>
+								</li>
+								<li>
+									<label class="text-radio">
+										<input type="radio" name="txt-radio1">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">mon. oct 12</span>
+									</label>
+								</li>
+								<li>
+									<label class="text-radio">
+										<input type="radio" name="txt-radio1">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">tue. oct 13</span>
+									</label>
+								</li>
+								<li>
+									<label class="text-radio">
+										<input type="radio" name="txt-radio1">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">wed. oct 14</span>
+									</label>
+								</li>
+								<li>
+									<label class="text-radio">
+										<input type="radio" name="txt-radio1">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">thu. oct 14</span>
+									</label>
+								</li>
+								<li>
+									<label class="text-radio">
+										<input type="radio" name="txt-radio1">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">fri. oct 14</span>
+									</label>
+								</li>
+								<li>
+									<label class="text-radio">
+										<input type="radio" name="txt-radio1">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">sat. oct 14</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="content-menu">
+							<div class="grid-list">
+								<div class="section-heading3">
+									<h4>Starter</h4>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="" data-toggle="modal" data-target="#product-modal1">
+														<img src="images/product/1.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#" data-toggle="modal"
+															data-target="#product-modal1">Chicken
+															Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/2.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/3.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="veg">VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-list">
+								<div class="section-heading3">
+									<h4>Main Course</h4>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/1.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/2.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="veg">VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/3.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/4.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="veg">VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/5.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-list">
+								<div class="section-heading3">
+									<h4>Side Dish</h4>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/1.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="veg">VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/2.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/3.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-list">
+								<div class="section-heading3">
+									<h4>Lunch Box</h4>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/1.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/2.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="veg">VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-list">
+								<div class="section-heading3">
+									<h4>Catering</h4>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/1.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="veg">VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/2.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="non-veg">NON-VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6">
+										<div class="product-grid2">
+											<figure>
+												<div class="product-pic">
+													<a href="">
+														<img src="images/product/3.jpg" alt="">
+													</a>
+												</div>
+												<figcaption>
+													<h5>
+														<a href="#">Chicken Malai Kabab</a>
+														<span>$8.99</span>
+													</h5>
+													<div class="tags">
+														<span class="veg">VEG</span>
+													</div>
+													<p>Kebabs are various cooked meat dishes, with their origins in
+														Middle Eastern cuisine.</p>
+													<hr>
+													<div class="item-qnty">
+														<div class="handle-counter" id="handleCounter-l1">
+															<button class="counter-minus">-</button>
+															<input type="text" value="3">
+															<button class="counter-plus">+</button>
+														</div>
+													</div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 br-m">
+					<div class="grid-right">
+						<div class="cart-section">
+							<div class="group-heading">
+								<h4>Your Order With Aradhya’s Kitchen</h4>
+								<p>For delivery Tuesday Oct,20</p>
+							</div>
+							<ul class="cart-list">
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter">
+											<button class="counter-minus">-</button>
+											<input type="text" value="3">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter2">
+											<button class="counter-minus">-</button>
+											<input type="text" value="0">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter3">
+											<button class="counter-minus">-</button>
+											<input type="text" value="2">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter4">
+											<button class="counter-minus">-</button>
+											<input type="text" value="3">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter">
+											<button class="counter-minus">-</button>
+											<input type="text" value="3">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter2">
+											<button class="counter-minus">-</button>
+											<input type="text" value="0">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter3">
+											<button class="counter-minus">-</button>
+											<input type="text" value="2">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter4">
+											<button class="counter-minus">-</button>
+											<input type="text" value="3">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter">
+											<button class="counter-minus">-</button>
+											<input type="text" value="3">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter2">
+											<button class="counter-minus">-</button>
+											<input type="text" value="0">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter3">
+											<button class="counter-minus">-</button>
+											<input type="text" value="2">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+								<li>
+									<span class="item-name">
+										Galouti Kabab
+									</span>
+									<span class="item-qnty">
+										<div class="handle-counter" id="handleCounter4">
+											<button class="counter-minus">-</button>
+											<input type="text" value="3">
+											<button class="counter-plus">+</button>
+										</div>
+									</span>
+									<span class="item-price">
+										$ 7.99
+									</span>
+								</li>
+							</ul>
+							<div class="donate-delivery">
+								<p class="p-s">I would like to donate a meal to those who are afected by wildfires.
+								</p>
+								<div class="prices">
+									<label class="text-radio">
+										<input type="radio" name="radio-donate" checked="checked">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">$ 0.25</span>
+									</label>
+									<label class="text-radio">
+										<input type="radio" name="radio-donate">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">$ 0.5</span>
+									</label>
+									<label class="text-radio">
+										<input type="radio" name="radio-donate">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">$ 0.75</span>
+									</label>
+									<label class="text-radio">
+										<input type="radio" name="radio-donate">
+										<span class="checkmark"></span>
+										<span class="text-radio-label">$ 1</span>
+									</label>
+								</div>
+							</div>
+							<div class="subtotal">
+								<h5>
+									<span>Subtotal</span>
+									<span>$32.07</span>
+								</h5>
+								<p>
+									<span>Delivery</span>
+									<span>$3.99</span>
+								</p>
+								<p>
+									<span>Service fee</span>
+									<span>$1.57 </span>
+								</p>
+								<p>
+									<span>Tip </span>
+									<span>$2.00</span>
+								</p>
+							</div>
+							<div class="total-cart">
+								<span>Check out</span>
+								<span>$ 32.07</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Chef -->
+	<section id="about-chef">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+					<img src="images/avatar/b-t1.jpg" alt="">
+				</div>
+				<div class="col-lg-9 col-md-8">
+					<div class="content">
+						<h4>About Shef</h4>
+						<p>I was born and raised in Mumbai, in a Sindhi family. Food has been an integral part of
+							growing up. My mom was an awesome cook. After I moved to The United States, I developed
+							an interest in cooking and started recreating my mom's dishes. Cooking food is a
+							mindful,
+							meditative experience for me. Hope my food brings joy to you.I was born and raised in
+							Mumbai, in a Sindhi family. Food has been an integral part of
+							growing up. My mom was an awesome cook. After I moved to The United States, I developed
+							an interest in cooking and started recreating my mom's dishes. Cooking food is a
+							mindful,
+							meditative experience for me. Hope my food brings joy to you.</p>
+						<p>I was born and raised in Mumbai, in a Sindhi family. Food has been an integral part of
+							growing up. My mom was an awesome cook. After I moved to The United States, I developed
+							an interest in cooking and started recreating my mom's dishes. Cooking food is a
+							mindful</p>
+						<a href="#" class="btn btn-main">Meet Chef</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<!-- 01 -->
+		<div class="newsletter">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-5">
+						<div class="content-left">
+							<h5>Know it all first!</h5>
+							<p>Never miss any newsletters</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7">
+						<div class="content-right">
+							<form action="">
+								<input type="text" class="form-control" placeholder="Enter your email">
+								<button type="submit" class="btn btn-main">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 02 -->
+		<div class="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="footer-logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae doloribus culpa nemo,
+							sequi
+							cum repellat illum hic laboriosam nihil eaque.</p>
+						<ul class="footer-social">
+							<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-3 col-6">
+								<h5>Why ChefNala</h5>
+								<ul class="footer-quick-link">
+									<li><a href="#">Safety & Trust</a></li>
+									<li><a href="#">Privacy policy</a></li>
+									<li><a href="#">FAQ</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4 col-6">
+								<h5>Explore more</h5>
+								<ul class="footer-quick-link">
+									<li><a href="#">Join as chef</a></li>
+									<li><a href="#">Join as foodie</a></li>
+									<li><a href="#">Careers</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-5">
+								<h5>Connect with Founder</h5>
+								<ul class="footer-address">
+									<li>
+										<i class="fa fa-map-marker"></i>
+										<span>ChefNala <br> New York City, USA</span>
+									</li>
+									<li>
+										<i class="fa fa-phone"></i>
+										<span>Call Us: <a href="tel:+123-456-7890">123-456-7890</a></span>
+									</li>
+									<li>
+										<i class="fa fa-envelope-o"></i>
+										<span>Email Us: <br> <a
+												href="mailto:connectchef@gmail.com">connectchef@gmail.com</a></span>
+									</li>
+									<li>
+										<i class="fa fa-fax"></i>
+										<span>Fax: <a href="#">123-456-789</a></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 03 -->
+		<div class="copyright">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-md-6 col-12">
+						<p>© 2020 ChefNala. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-12">
+						<ul>
+							<li><img src="images/pay/1.png" alt=""></li>
+							<li><img src="images/pay/2.png" alt=""></li>
+							<li><img src="images/pay/3.png" alt=""></li>
+							<li><img src="images/pay/4.png" alt=""></li>
+							<li><img src="images/pay/5.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Zipcode Modal -->
+	<div aria-hidden="true" aria-labelledby="zipcode-modal-Label" class="modal fade" id="zipcode-modal" role="dialog"
+		tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Zip Code</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">
+							<img src="images/close.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<label for="">Enter your zipcode</label>
+						<input type="text" class="form-control">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Product Details Modal -->
+	<div aria-hidden="true" aria-labelledby="product-modal-Label" class="modal fade product-modal modal2"
+		id="product-modal1" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">
+							<img src="images/close-w.svg" alt="">
+						</span>
+					</button>
+					<div class="product-details">
+						<figure>
+							<div class="product-pic">
+								<a href="">
+									<img src="images/product/2.jpg" alt="">
+								</a>
+							</div>
+							<figcaption>
+								<h5 class="titles">
+									<a href="#">Galouti Kebab</a>
+								</h5>
+								<div class="tags-list">
+									<span class="tag non-veg">NON-VEG</span>
+									<span class="price">$8.99</span>
+									<div class="item-qnty">
+										<div class="handle-counter" id="handleCounter-m1">
+											<button class="counter-minus">-</button>
+											<input type="text" value="0">
+											<button class="counter-plus">+</button>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<ul>
+									<li>
+										<h6>
+											<img src="images/question-icon.png" alt="">
+											About
+										</h6>
+										<p>This dish is originally from Lucknow. It contains minced lamb, which is mixed
+											along with Indian spices and papaya to help tenderize the meat. This meal
+											melts in your mouth and is best served with pudina chutney onion kuchumber
+											salad.</p>
+									</li>
+									<li>
+										<h6>
+											<img src="images/ingredients-icon.png" alt="">
+											Ingredients
+										</h6>
+										<p>Ginger, garlic, onions, coriander, cumin seeds saffron, cashew nuts, raw
+											papaya, cinnamon, cloves, allspice, vetiver, betelroot, rose petals,
+											stoneflower, minced lamb, milk, rose water, kewra water.</p>
+									</li>
+									<li>
+										<h6>
+											<img src="images/allergy-warning-icon.png" alt="">
+											Allergy warning
+										</h6>
+										<p>Food may contain — or may be processed in a facility that contains — peanuts,
+											tree nuts, wheat, dairy, eggs, fish or soy.</p>
+									</li>
+									<li>
+										<h6>
+											<img src="images/piece-icon.png" alt="">
+											Portion size
+										</h6>
+										<p>
+											<i class="fa fa-user"></i>
+											6 pieces
+										</p>
+									</li>
+								</ul>
+								<a href="#" class="btn btn-main btn-block">Add to cart</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Jquery Min -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Popper Min -->
+	<script src="plugins/bootstrap/js/popper.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Owl Carousel -->
+	<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+	<!-- Star Rating -->
+	<script src="plugins/star_rating/star-rating.js"></script>
+
+	<!-- Quantity -->
+	<script src="plugins/quantity.js"></script>
+
+	<!-- Phone -->
+	<script src="plugins/phone/phone.js"></script>
+
+	<!-- Select -->
+	<script src="plugins/select/select.js"></script>
+
+	<!-- Custom Js -->
+	<script src="js/default.js"></script>
+</body>
+
+</html>

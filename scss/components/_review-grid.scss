@@ -1,0 +1,65 @@
+// ----- Review Grid
+.review-grid {
+    figure {
+        margin-bottom:0;
+        padding-top:45px;
+        position: relative;
+        // Max Width 767px
+        @media only screen and (max-width: $break_767) {
+            padding-top:30px;
+        }
+        .user-image {
+            width:80px;
+            height:80px;
+            border:5px solid $white-clr;
+            border-radius:50%;
+            overflow: hidden;
+            position: absolute;
+            top:5px;
+            left: 50%;
+            transform:translateX(-50%);
+            box-shadow:0 0 3px rgba($black-clr, 0.5);
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                width:50px;
+                height:50px;
+            }
+            img {
+                width:100%;
+            }
+        }
+        .content {
+            background-color:$grey-clr;
+            padding:20px;
+            padding-top:50px;
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                padding-top:30px;
+            }
+            .name {
+                text-align: center;
+                display: block;
+                margin-bottom:10px;
+                color:$primary-clr;
+                font-size:1.1em;
+                text-transform: capitalize;
+            }
+            p {
+                margin-bottom:20px;
+            }
+            .cs-rating {
+                display: flex;
+                flex-wrap:wrap;
+                .rating-xs {
+                    display: inline-block;
+                    .caption {
+                        display: none;
+                    }
+                }
+                .review {
+                    margin-left:5px;
+                }
+            }
+        }
+    }
+}

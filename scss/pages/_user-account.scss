@@ -1,0 +1,69 @@
+// ----- Account Setting
+#account-setting {
+    /* Grid Left */
+    .grid-left {
+        padding:60px 0;
+        .boxi {
+            border-bottom:1px dashed $grey2-clr;
+            padding-bottom:40px;
+            margin-bottom:40px;
+            // Max Width 767px
+            @media only screen and (max-width: $break_767) {
+                padding-bottom:20px;
+                margin-bottom:20px;
+            }
+            &:last-child {
+                border-bottom:none;
+                padding-bottom:0;
+                margin-bottom:0;
+            }
+            iframe {
+                width:100%;
+                height:500px;
+                margin-bottom:20px;
+                // Max Width 767px
+                @media only screen and (max-width: $break_767) {
+                    height:400px;
+                }
+            }
+            p {
+                font-size:16px;
+                line-height:22px;
+                margin-bottom:0;
+                color:$grey2-clr;
+            }
+            .ad-edit {
+                margin-top:20px;
+                color:$grey2-clr;
+                a {
+                    display: inline-block;
+                    color:$primary-clr;
+                }
+            }
+            .tips {
+                display: flex;
+                flex-wrap:wrap;
+                margin-bottom:20px;
+                label {
+                    margin-right:5px;
+                    margin-bottom:5px;
+                    min-width:90px;
+                    &:last-child {
+                        margin-right:0;
+                    }
+                }
+            }
+        }
+    }
+    /* Grid Right */
+    .br-m {
+        border-left: 1px solid darken($grey-clr, 10%);
+        // Max Width 991px
+        @media only screen and (max-width: $break_991) {
+            display: none;
+        }
+        .grid-right {
+            padding-top:60px;
+        }
+    }
+}

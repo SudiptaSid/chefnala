@@ -1,0 +1,21 @@
+// ----- Owl Thumb Slider
+.owl-theme {
+    .owl-nav {
+        text-align: center;
+        button {
+            width:30px;
+            height:30px;
+            margin:0 !important;
+            font-size: 30px !important;
+            color:$black-clr !important;
+            background-color:$no-clr !important;
+            border:none;
+            border-radius:0 !important;
+            &:hover, &:focus {
+                outline:none;
+                background-color:$no-clr !important;
+                color:$primary-clr !important;
+            }
+        }
+    }
+}
